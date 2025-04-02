@@ -10,7 +10,7 @@ metadata:
     - gitlab
     - rhdh-adventure
 spec:
-  owner: rmarting@redhat.com
+  owner: rhdh-adventure
   type: website
   parameters:
     - title: Provide some simple information
