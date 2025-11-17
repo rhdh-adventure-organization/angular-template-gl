@@ -9,6 +9,8 @@ metadata:
     - angular
     - gitlab
     - rhdh-adventure
+  annotations:
+    backstage.io/template-version: 'v1.0.0'
 spec:
   owner: rhdh-adventure
   type: website
@@ -66,6 +68,9 @@ spec:
           description:  ${{ parameters.description }}
           repo_url: ${{ parameters.repoUrl }}?owner=${{ parameters.owner | parseEntityRef | pick('name') }}&repo=${{ parameters.component_id }}
           owner: ${{ parameters.owner | parseEntityRef | pick('name') }}
+    - id: create-provenance-annotation
+      name: Append the entityRef of this template to the entityRef
+      action: catalog:scaffolded-from
     - id: publish
       name: Publishing to the GitLab Repository
       action: publish:gitlab
