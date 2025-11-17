@@ -10,7 +10,7 @@ metadata:
     - gitlab
     - rhdh-adventure
   annotations:
-    backstage.io/template-version: 'v1.0.0'
+    backstage.io/template-version: 'v1.0.1'
 spec:
   owner: rhdh-adventure
   type: website
